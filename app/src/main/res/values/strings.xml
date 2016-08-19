@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ButtonsView</string>
+    <string name="string">Press the given numbers</string>
+</resources>
