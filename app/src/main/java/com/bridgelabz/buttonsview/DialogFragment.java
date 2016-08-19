@@ -282,9 +282,9 @@ public class DialogFragment extends Dialog implements View.OnClickListener
     }
     void resetInput()
     {
+        Toast.makeText(getContext(), "Wrong Input", Toast.LENGTH_SHORT).show();
         for(i=0; i<b.length; i++)
         {
-            Toast.makeText(getContext(), "Wrong Input", Toast.LENGTH_SHORT).show();
             button[i].setBackgroundResource(R.drawable.shape_for_release);
             b[i] = 0;
             count = 0;
