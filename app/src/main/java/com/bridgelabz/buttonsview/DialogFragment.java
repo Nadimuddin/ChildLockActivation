@@ -64,11 +64,10 @@ public class DialogFragment extends Dialog implements View.OnClickListener
         num[1] = (TextView)findViewById(R.id.num2);
         num[2] = (TextView)findViewById(R.id.num3);
 
-        /*while loop to check that
-        * generated random numbers should not be repeated
-        * and should be greater than zero
-        * */
         int k=1;
+        
+        /*while loop to generate 3 random numbers
+        * */
         for (i = 0; i < 3; i++) {
             arr[i] = randomNumberGeneration(k, k+2);
             k+=3;
