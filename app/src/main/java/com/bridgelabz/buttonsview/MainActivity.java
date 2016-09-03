@@ -3,8 +3,12 @@ package com.bridgelabz.buttonsview;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Button childLockButton;
 
     //creating object of Dialog box
     DialogFragment dialog;
@@ -14,15 +18,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dialog = new DialogFragment(this);
-        Log.i("TAG","object value in Main: "+dialog);
+        childLockButton = (Button)findViewById(R.id.childLock);
+        childLockButton.setOnClickListener(this);
 
-        /*
-        * passing the object of DialogFragment class
-        * so that we can close the dialog from DialogFragment class
-        * by using the same object
-        * */
-        dialog.passingObject(dialog);
+    }
+
+    @Override
+    public void onClick(View view)
+    {
+        dialog = new DialogFragment(this);
 
         //show the dialog
         dialog.show();
