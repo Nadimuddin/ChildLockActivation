@@ -66,7 +66,7 @@ public class DialogFragment extends Dialog implements View.OnClickListener
 
         int k=1;
         
-        /*while loop to generate 3 random numbers
+        /*loop to generate 3 random numbers
         * */
         for (i = 0; i < 3; i++) {
             arr[i] = randomNumberGeneration(k, k+2);
