@@ -1,4 +1,8 @@
 package com.bridgelabz.buttonsview;
+/**
+ * Created by Nadimuddin on 17/8/16.
+ * purpose: to complete the given task(make a child lock activation which restrict child from access)
+ */
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
